@@ -19,23 +19,31 @@
 	</properties>
 
 	<dependencies>
+		<!-- 1、添加springboot web框架启动 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
-		
+		<!-- 2、添加mysql数据库 -->
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
+		</dependency>
+		
+		<!-- 3、springboot启动测试 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<!-- jsp相关支持 -->
+		
+		<!-- 4、添加jsp相关依赖 -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
@@ -44,12 +52,14 @@
 			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
 		</dependency>
-		<!-- Tomcat服务器支持jsp -->
+		
+		<!-- 5、Tomcat服务器支持jsp -->
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
 			<artifactId>tomcat-embed-jasper</artifactId>
 		</dependency>
-		<!-- mybatis-puls插件依赖 -->
+		
+		<!-- 6、mybatis-puls插件依赖 -->
 		<dependency>
 			<groupId>com.baomidou</groupId>
 			<artifactId>mybatis-plus-generator</artifactId>
@@ -60,7 +70,8 @@
 			<artifactId>velocity-engine-core</artifactId>
 			<version>2.1</version>
 		</dependency>
-		<!-- spring—mybatis 集成依赖，spring与mybatis集成时对一些类库的版本有要求（需配套），添加此依赖可解决 -->
+		
+		<!-- 7、spring—mybatis 集成依赖，spring与mybatis集成时对一些类库的版本有要求（需配套），添加此依赖可解决 -->
 		<dependency>
 			<groupId>com.baomidou</groupId>
 			<artifactId>mybatis-plus-boot-starter</artifactId>
