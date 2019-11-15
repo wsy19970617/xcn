@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>测试一下</h1>
+	<h1>内联框架</h1>
 </body>
 </html>
