@@ -1,6 +1,7 @@
 package cn.edu.xcu.mapper;
 
 import cn.edu.xcu.entity.Basic;
+
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

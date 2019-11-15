@@ -4,6 +4,8 @@ import cn.edu.xcu.entity.Basic;
 import cn.edu.xcu.mapper.BasicMapper;
 import cn.edu.xcu.service.IBasicService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -16,5 +18,16 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class BasicServiceImpl extends ServiceImpl<BasicMapper, Basic> implements IBasicService {
+@Autowired
+private BasicMapper basicMapper;
+	@Override
+	public boolean addBasic(Basic basic) {
+		int ret=basicMapper.insert(basic);
+		if(ret>0) {
+			return true;
+		}else {
+			return false;
+		}
+	}
 
 }
